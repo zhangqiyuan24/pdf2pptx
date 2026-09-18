@@ -1,0 +1,21 @@
+{
+  "name": "pdf2pptx",
+  "version": "1.0.0",
+  "description": "Recover vector PDF figures into fully editable PowerPoint (native shapes / text boxes / images) — no PowerPoint needed for conversion",
+  "type": "module",
+  "dependencies": {
+    "mupdf": "^1.28.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "demo": "node demo/gen_demo.cjs && node pdf2svg.mjs demo/demo.pdf demo/demo.svg && node svg2pptx.mjs demo/demo.svg -o demo/demo.pptx"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangqiyuan24/pdf2pptx.git"
+  },
+  "keywords": ["pdf", "pptx", "powerpoint", "svg", "editable", "vector", "figure", "chart", "reverse-engineering"]
+}
